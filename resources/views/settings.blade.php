@@ -1,0 +1,6 @@
+@extends('layouts.app')
+@section('title', 'Settings')
+@section('content')
+<div class="page-heading"><div><span class="eyebrow text-teal">SYSTEM FOUNDATION</span><h1>Workspace settings</h1><p>Review access policies and the current integration status.</p></div></div>
+<div class="row g-4"><div class="col-lg-8"><section class="panel p-4"><h2>Role permissions</h2><p class="text-secondary">Foundation roles are defined in code and seeded into the database. Assign roles from Employees.</p><div class="table-responsive"><table class="table"><thead><tr><th>Role</th><th>Enabled permissions</th></tr></thead><tbody>@foreach($roles as $role)<tr><td>{{ $role->label }}</td><td>@foreach($role->permissions as $permission)<span class="permission-label">{{ $permission->label }}</span>@endforeach</td></tr>@endforeach</tbody></table></div></section></div><div class="col-lg-4"><section class="panel p-4"><h2>Integrations</h2><dl class="settings-list"><dt>Gmail</dt><dd>Not configured · Phase 4</dd><dt>Google Chat</dt><dd>Optional · Not connected</dd><dt>TraceQ</dt><dd>Independent application · No connection</dd><dt>Document storage</dt><dd>Private disk configured; uploads arrive in a later phase</dd></dl></section></div></div>
+@endsection

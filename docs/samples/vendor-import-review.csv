@@ -1,0 +1,4 @@
+company_name,primary_contact,primary_email,phone,coverage,document_types,time_zone,availability
+Browser Import Demo,Avery Demo,browser.import@vendors.example.test,+1 202 555 0180,CA:Orange County,Deed|Mortgage,America/Los_Angeles,available
+Needs Correction Demo,Drew Demo,invalid-email,+1 202 555 0181,TX:Travis County,Deed,America/Chicago,limited
+Browser Duplicate Demo,Avery Demo,browser.import@vendors.example.test,+1 202 555 0182,CA:Orange County,Deed,America/Los_Angeles,available
